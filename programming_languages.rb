@@ -1,7 +1,7 @@
 
  def reformat_languages(language_hash)
   new_hash = {}
-  
+      binding.pry
   language_hash.each do |language_cat, languages|
     languages.each do |language, attributes|
 
@@ -10,7 +10,7 @@
           new_hash[language] = {
             :type => att_value,
             :style => [:oo, :functional]
-          }binding.pry
+          }
         else
           new_hash[language] = {
              :type => att_value,
